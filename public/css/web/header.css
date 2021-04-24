@@ -3,5 +3,11 @@
 /*=======================================*/
 
 .main-header {
-    background-color: aqua;
+    display: flex;
+    background-color: transparent;
+    height: 80px;
+    align-items: center;
+    width: 100%;
+    position: relative;
+    z-index: 2;
 }

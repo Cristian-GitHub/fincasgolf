@@ -3,14 +3,158 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Comfortaa', cursive;
+    max-width: 1500px;
+}
+.body{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
 }
 
-/*=======================================*/
-                /* MAIN */
-/*=======================================*/
+html {
+    scroll-behavior: smooth;  /*comportamiento de arrastre suave al hacer scroll*/
+  }
 
 .main{
     display: flex;
     flex-wrap: wrap;
+    flex-direction: column;
     width: 100%;
+    max-width: 1500px;
+    justify-content: center;
 }
+
+.botonScrollUp{
+    background-color: rgba(0,0,0,.5);
+    color: white;
+    font-size: x-large;
+    padding: 5px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border: none;
+    position: fixed;
+    z-index: 2;
+    right: 0;
+    bottom: 250px;
+    display: none;
+    transition-duration: 1s;
+}
+.botonScrollUp:hover{
+    background-color: #FCFFE3;
+    color: #05571F;
+}
+
+
+/*======= NAV-BAR =======*/
+#logo{
+    display: flex;
+    padding: 10px;
+    height: 80px;
+}
+.sticky {
+	position: -webkit-sticky;
+	position: sticky;
+    top: 0;
+    z-index: 1;
+}
+.list-inline {
+    display: flex;
+    width: 100%;
+    height: 80px;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    background-color: rgba(0,0,0,.5);
+    transition:all 1s ease-in-out;
+}    
+.list-inline > li {
+    position: relative;
+	display: inline-block;
+	margin-left: 0.5em;
+	margin-right: 0.5em;
+}
+
+.buttons {
+    width: 100px;
+    border: none;
+    background-color: transparent;
+    color: white;
+}
+.buttons:hover{
+    font-weight: bolder;
+    font-size: large;
+}
+/*======= FIN NAV-BAR =======*/
+
+
+/*======= SECCIONES =======*/
+.articles{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+.section {
+	height: 250px;
+    width: 100%;
+	margin: 0;
+    position: relative;
+}
+.carrusel{
+    top: 0;
+    position: absolute;
+}
+.carrusel img {
+    max-width: 1500px;
+}
+
+/*======= SECCION BARRIO =======*/
+
+.barrio{
+    margin-top: 200px;
+    position: relative;
+    background-color: #FEFEFE;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+#botonBarrio{
+    padding: 5px 8px;
+    background-color: rgba(0,0,0,.5);
+    color:white;
+    font-weight: bolder;
+    border: none;
+    border-radius: 5px;
+    position: absolute;
+    right: 50px;
+    bottom: 25px;
+    transition-duration: 1s;
+}
+#botonBarrio:hover{
+    background-color: #CA9B4D;
+    color: #05571F;
+    font-weight: bolder;
+}
+.imgBarrio{
+    width: 15%;
+    height: 80%;
+    margin: 10px;
+    border: solid 1px #05571F;
+    border-radius: 5px;
+}
+#textoBarrio{
+    width: 40%;
+    height: 80%;
+    margin: 10px;
+}
+
+/*======= SECCION NOTICIAS =======*/
+
+
+
+#a { background-color: transparent;}
+#c { background-color: #CA9B4D;}
+#d { background-color: #CA9B4D;}
+#e { background-color: #FCFFE3;}
+#f { background-color: #CA9B4D;}
