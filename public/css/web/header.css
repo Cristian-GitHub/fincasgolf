@@ -2,12 +2,52 @@
               /* HEADER */
 /*=======================================*/
 
-.main-header {
+
+.mainHeader {
     display: flex;
     background-color: transparent;
     height: 80px;
     align-items: center;
+    justify-content: center;
     width: 100%;
     position: relative;
     z-index: 2;
+}
+.containerHeader{
+    display: flex;
+    height: 100%;
+    width: 97%;
+}
+.leftHeader{
+    width: 30%;
+    height: 100%;
+}
+.rightHeader{
+    width: 70%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+.rightHeader a{
+    text-decoration: none;
+}
+.headerIcon{
+    height: 50px;
+    width: 50px;
+    background-color: #FEFEFE;
+    color: #05571F;
+    border-radius: 50%;
+    font-weight: bolder;
+    font-size: 2vw;
+    padding:20px;
+    margin-left: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 1s;
+}
+.headerIcon:hover{
+    background-color: #05571F;
+    color: #FEFEFE;
 }

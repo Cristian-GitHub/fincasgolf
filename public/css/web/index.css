@@ -3,20 +3,18 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Comfortaa', cursive;
-    max-width: 1500px;
 }
-.body{
+body{
     width: 100%;
     display: flex;
-    justify-content: center;
     flex-direction: column;
-    align-items: center;
-}
+    max-width: 1500px;
+    overflow-x: hidden;
 
+}
 html {
     scroll-behavior: smooth;  /*comportamiento de arrastre suave al hacer scroll*/
   }
-
 .main{
     display: flex;
     flex-wrap: wrap;
@@ -24,12 +22,12 @@ html {
     width: 100%;
     max-width: 1500px;
     justify-content: center;
-}
 
+}
 .botonScrollUp{
     background-color: rgba(0,0,0,.5);
     color: white;
-    font-size: x-large;
+    font-size: large;
     padding: 5px;
     border-top-left-radius: 5px;
     border-bottom-left-radius: 5px;
@@ -57,7 +55,7 @@ html {
 	position: -webkit-sticky;
 	position: sticky;
     top: 0;
-    z-index: 1;
+    z-index: 4;
 }
 .list-inline {
     display: flex;
@@ -75,14 +73,17 @@ html {
 	margin-left: 0.5em;
 	margin-right: 0.5em;
 }
-
-.buttons {
+.buttonsNavBar {
     width: 100px;
     border: none;
     background-color: transparent;
     color: white;
 }
-.buttons:hover{
+.buttonsNavBar:hover{
+    font-weight: bolder;
+    font-size: large;
+}
+.buttonsJS{
     font-weight: bolder;
     font-size: large;
 }
@@ -96,28 +97,28 @@ html {
     flex-wrap: wrap;
 }
 .section {
-	height: 250px;
+	height: 500px;
     width: 100%;
 	margin: 0;
     position: relative;
 }
 .carrusel{
     top: 0;
-    position: absolute;
+    position: fixed;
 }
 .carrusel img {
     max-width: 1500px;
 }
 
 /*======= SECCION BARRIO =======*/
-
 .barrio{
-    margin-top: 200px;
+    margin-top: 400px;
     position: relative;
     background-color: #FEFEFE;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
+    justify-content: space-evenly;
 }
 #botonBarrio{
     padding: 5px 8px;
@@ -127,8 +128,9 @@ html {
     border: none;
     border-radius: 5px;
     position: absolute;
-    right: 50px;
-    bottom: 25px;
+    height: 35px;
+    right: 35px;
+    bottom: 10px;
     transition-duration: 1s;
 }
 #botonBarrio:hover{
@@ -140,21 +142,408 @@ html {
     width: 15%;
     height: 80%;
     margin: 10px;
-    border: solid 1px #05571F;
+    border: solid 2px #05571F;
     border-radius: 5px;
+    object-fit: cover;
 }
 #textoBarrio{
     width: 40%;
     height: 80%;
-    margin: 10px;
+    padding: 10px;
+    padding-top: 0;
+    text-align: justify;
+    display: flex;
 }
+#textoBarrio div{
+    height: 90%;
+    display: flex;
+    overflow: hidden;
+}
+.imgBarrio img{
+    height: 100%;
+    object-fit: cover;                  /* se mantiene la proporción de la imagen. 100% alt. en el div. ancho lo que de */
+}
+/*======= FIN SECCION BARRIO =======*/
 
 /*======= SECCION NOTICIAS =======*/
+.noticias{
+    border-top: solid 2px #05571F;
+    border-bottom: solid 2px #05571F;
+    background-color: #FEFEFE;
+    overflow: hidden;
+}
+/*======= FIN SECCION NOTICIAS =======*/
+
+/*======= SECCION CLUB HOUSE =======*/
+.clubHouse{
+    background-color: #FEFEFE;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+}
+#iiHouse {
+    width: 55%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(0,0,0,.8);
+    padding: 10px;
+    color: white;
+}
+#imgHouse{
+    width: 100%;
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+#slideHouse {
+    width: 95%;
+    height: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: space-evenly;
+    overflow: hidden;
+    border-radius: 5px;
+}
+#slideHouse ul{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+#slideHouse ul li{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+#slideHouse ul li img{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+#infoHouse{
+    width: 100%;
+    height: 30%;
+    padding: 20px;
+    
+}
+#infoHouse p{
+    font-size: 1.2vw;
+}
+#restoHouse{
+    border-radius: 5px;
+    margin-left: 10px;
+    width: 42%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+#tituloRestoHouse{
+    width: 100%;
+    height: 15%;
+    padding: 3px;
+    padding-left: 20px;
+}
+#tituloRestoHouse h2{
+    color: #05571F;
+    font-weight: bolder;
+}
+#itRestoHouse{
+    width: 100%;
+    height: 65%;
+    display: flex;
+}
+#imgRestoHouse{
+    display: flex;
+    align-items: flex-start;
+    width: 40%;
+    height: 100%;
+    padding: 0px 20px 0px 20px;
+    border-radius: 5px;
+}
+#imgRestoHouse img{
+    box-shadow:2px 2px 10px #05571F;
+    border-radius: 5px;
+}
+#textoRestoHouse{
+    width: 60%;
+    height: 100%;
+    padding: 0px 10px;
+}
+#textoRestoHouse p{
+    font-size: 1.2vw;
+}
+#botonesRestoHouse{
+    display: flex;
+    width: 100%;
+    height: 20%;
+    justify-content: flex-end;
+    align-items: center;
+}
+#verMenu{
+    padding: 5px 8px;
+    background-color: #CA9B4D;
+    height: 35px;
+    color: #05571F;
+    border: none;
+    border-radius: 5px;
+    transition-duration: 1s;
+}
+#verMenu:hover{
+    background-color: #05571F;
+    color: #CA9B4D;
+    font-weight: bolder;
+}
+.uk-panel img{
+    border-radius: 5px;
+    border: solid 1px #CA9B4D;
+}
+.uk-panel div a{
+    text-decoration: none;
+    color: #FCFFE3;
+    font-weight: bolder;
+}
+/*======= FIN SECCION CLUB HOUSE =======*/
+
+/*======= SECCION CLUB DE GOLF =======*/
+#sectionGolf{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color: #FCFFE3;
+    border-bottom: solid 2px #05571F;
+
+}
+.golf{
+    border-top: solid 2px #05571F;
+}
+.golf p {
+    position: absolute;
+    z-index: 3;
+    right: -40px;
+    bottom: 0px;
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: row-reverse;
+    height: 35px;
+}
+#contactoGolf{
+    padding: 5px 8px;
+    background-color: #CA9B4D;
+    height: 35px;
+    color: #05571F;
+    border: none;
+    border-radius: 5px;
+    margin-right: 10px;
+    transition-duration: 1s;
+}
+#contactoGolf:hover{
+    background-color: #05571F;
+    color: #CA9B4D;
+    font-weight: bolder;
+}
+.uk-offcanvas-bar{
+    background-color: green;
+    display: flex;
+    width: 30%;
+}
+#offcanvasGolf{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: hotpink;
+}
+.btnVerVideo{
+    padding: 5px 8px;
+    background-color: #CA9B4D;
+    color: #05571F;
+    height: 35px;
+    border: none;
+    border-radius: 5px;
+    transition-duration: 1s;
+    text-decoration: none;
+}
+.btnVerVideo:hover{
+    font-weight: bolder;
+    background-color: #05571F;
+    color: #CA9B4D;
+    text-decoration: none;
+}
+#asuntosGolf{
+    width: 100%;
+    height: 20%;
+    display: flex;
+}
+.listGolf{
+    display: flex;
+    height: 100%;
+    align-items: center;
+}
+#asuntosGolf ul li{
+    margin: 0px 5px;
+    text-align: center;
+    display: inline-block;
+}
+.btnAG{
+    text-decoration: none;
+    color: white;
+    background-color: #05571F;
+    height: 35px;
+    width: 100px;
+    padding: 5px;
+    border-radius: 5px;
+    border: none;
+    transition: 1s;
+}
+.btnAG:hover{
+    background-color: #CA9B4D;
+    font-weight: bolder;
+}
+.asuntosGolfJS{
+    background-color: #CA9B4D;
+    font-weight: bolder;
+}
+.uk-subnav-pill li a{
+    background-color: #CA9B4D;
+}
+#ctnrImgGolf{
+    width: 30%;
+    height: 70%;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    border: solid 2px #05571F;
+    border-radius: 5px;
+    margin-left: 40px;
+}
+#ctnrImgGolf ul{
+    height: 100%;
+}
+#ctnrImgGolf ul li{
+    height: 100%;
+}
+#ctnrTxtGolf{
+    width: 60%;
+    height: 80%;
+    display: flex;
+    align-items: flex-start;
+}
+#ctnrTxtGolf ul{
+    width: 100%;
+    height: 80%;
+    display: flex;
+    justify-content: center;
+}
+#ctnrTxtGolf ul li{
+    width: 90%;
+    height: 100%;
+    font-size: 1.2vw;
+}
+/*======= SECCION CLUB DE GOLF =======*/
+
+/*======= SECCION EVENTOS =======*/
+
+/*======= FIN SECCION EVENTOS =======*/
 
 
+/*======= SECCION CONTACTO =======*/
+.contacto{
+    border-top: solid 2px #05571F;
+    border-bottom: solid 2px #05571F;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+#formularioContacto{
+    width: 50%;
+    height: 85%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#formularioContacto form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 70%;
+    background-color: rgba(0,0,0,.6);
+    border-radius: 5px;
+}
+#tituloFormulario h4{
+    color: #FEFEFE;
+    font-weight: bolder;
+}
+.input-container{
+    margin: 5px;
+    width: 80%;
+}
+.input-container input{
+    width: 100%;
+    height: 35px;
+    border-radius: 5px;
+    border: none;
+    padding: 5px;
+}
+#coment{
+    border-radius: 5px;
+    border: none;
+    padding: 5px;
+}
+#btnsEraseSend{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 80%;
+}
+.buttonContainer{
+    width: 49%;
+    height: 35px;
+}
+.buttonContainer button{
+    width: 100%;
+    height: 100%;
+    border: none;
+    border-radius: 5px;
+    background-color: #FCFFE3;
+    color: #05571F;
+}
+.buttonContainer button:hover{
+    background-color: #05571F;
+    color: #FCFFE3;
+    font-weight: bolder;
+}
+#btnErase:hover{
+    background-color: tomato;
+    color: #05571F;
+    font-weight: bolder;
+}
 
-#a { background-color: transparent;}
-#c { background-color: #CA9B4D;}
-#d { background-color: #CA9B4D;}
-#e { background-color: #FCFFE3;}
-#f { background-color: #CA9B4D;}
+/*MAPA GOOGLE*/
+#iframeContacto{                
+    width: 50%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#tituloIframe h4{
+    color: #05571F;
+    font-weight: bolder;
+}
+#iframe{                            
+    width: 80%;
+    height: 85%;
+}
+/*======= FIN SECCION CONTACTO =======*/

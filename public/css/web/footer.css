@@ -1,9 +1,102 @@
 /*=======================================*/
                /* FOOTER */
 /*=======================================*/
-
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Comfortaa', cursive;
+}
 .main-footer {
-    background-color: red;
-    height: 200px;
+    background-color: rgb(202,155,77);
+    color: #FCFFE3;    
+    height: 110px;
     width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    position: relative;
+    z-index: 3;
+}
+.footer{
+    width: 33.333%;
+    height: 100%;
+}
+#footerLeft{
+    display: flex;
+}
+#imgLogo{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#tel-email{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+#tel-email div a{
+    text-decoration: none;
+}
+#tel-email div a h4{
+    font-size: 1vw;
+}
+#tel-email div a h4:hover{
+    color: #FEFEFE;
+    font-weight: bolder;
+}
+
+/*FIN IZQUIERDA*/
+
+/*DERECHA*/
+#footerRight{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#titulo{
+    width: 100%;
+    height: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#titulo h3{
+    font-size: 1.4vw;
+    color: #FCFFE3;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    margin-top: 5px;
+}
+#comisiones{
+    width: 55%;
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#comisiones div{
+    width: 100%;
+    height: 30%;
+}
+#comisiones div h4{
+    text-decoration: none;
+    font-size: 1.1vw;
+    color: black;
+}
+#comisiones div h4 a{
+    text-decoration: none;
+    margin: 3px 3px;
+    font-size: 1.3vw;
+    color: #FCFFE3;
+}
+#comisiones div h4 a:hover {
+    color: #05571F;
 }

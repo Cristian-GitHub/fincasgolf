@@ -14,3 +14,5 @@ Paleta de Colores
 
 fontfamily: comfortaa
 
+imágenes optenidas de: https://unsplash.com/photos/BXxK120sx_I
+

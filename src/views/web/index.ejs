@@ -10,18 +10,17 @@
 
                 <nav class="sticky">
                     <ul class="list-inline">
-                        <li><button class="buttons botonA"> el barrio </button></li>
-                        <li><button class="buttons botonB"> noticias </button></li>
-                        <li><button class="buttons botonC"> eventos </button></li>
+                        <li><button class="buttonsNavBar botonBarrio"> el barrio </button></li>
+                        <li><button class="buttonsNavBar botonNoticias"> noticias </button></li>
+                        <li><button class="buttonsNavBar botonHouse"> club house </button></li>
                         <li>
                             <section class="container">
-                                <a href="#"><img src="images/header/logo-san-vicente-golf.png"
-                                        alt="logo-san-vicente-golf" id="logo"></a>
+                                <a href="#"><img src="images/header/logo-san-vicente-golf.png" alt="logo-san-vicente-golf" id="logo"></a>
                             </section>
                         </li>
-                        <li><button class="buttons botonD"> club de golf </button></li>
-                        <li><button class="buttons botonE"> club house </button></li>
-                        <li><button class="buttons botonF"> contacto </button></li>
+                        <li><button class="buttonsNavBar botonGolf"> club de golf </button></li>
+                        <li><button class="buttonsNavBar botonEventos"> eventos </button></li>
+                        <li><button class="buttonsNavBar botonContacto"> contacto </button></li>
                     </ul>
                 </nav>
 
@@ -31,7 +30,7 @@
 
                     <!-- ==== EL PRIMERO ES UN CARRUSEL === -->
 
-                    <article class="section carrusel" id="a">
+                    <article class="section carrusel">
                         <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
                             <div class="carousel-inner">
                                 <div class="carousel-item active">
@@ -47,56 +46,304 @@
                         </div>
                     </article>
 
+                    <!-- ==== EL SEGUNDO ES LA SECCIÓN BARRIO === -->
+
                     <article class="section barrio">
                         <div class="imgBarrio">
+                            <img src="/images/barrio/barrio-01.jpg" alt="">
                         </div>
                         <div class="imgBarrio">
+                            <img src="/images/barrio/barrio-02.jpg" alt="">
                         </div>
                         <div class="imgBarrio">
+                            <img src="/images/barrio/barrio-03.jpg" alt="">
                         </div>
                         <div id="textoBarrio">
-                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquam facere quasi sequi
-                                possimus illum. Aut consectetur nihil neque, tenetur deleniti nostrum, voluptas porro
-                                magni distinctio atque illo dicta. Reprehenderit, delectus. Lorem ipsum dolor sit amet
-                                consectetur adipisicing elit. Odit ad facilis saepe ipsa rerum placeat expedita, quidem
-                                ab nihil eos aliquam illum iusto eligendi unde, iste maiores! Possimus, dignissimos
-                                vitae?
-                            </p>
+                            <div>
+                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquam facere quasi sequi
+                                    possimus illum. Aut consectetur nihil neque, tenetur deleniti nostrum, voluptas porro
+                                    magni distinctio atque illo dicta. Reprehenderit, delectus. Lorem ipsum dolor sit amet
+                                    consectetur adipisicing elit. Odit ad facilis saepe ipsa rerum placeat expedita, quidem
+                                    ab nihil eos aliquam illum iusto eligendi unde, iste maiores!
+                                </p>
+                            </div>
                         </div>
                         <button id="botonBarrio"> saber más </button>
 
                     </article>
 
-                    <article class="section noticias" id="c">
-                        <h2>noticias</h2>
+                    <!-- ==== EL TERCERO ES LA SECCIÓN NOTICIAS === -->
+                    
+                    <article class="section noticias">
+                        <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1" uk-slideshow="animation: fade" style="height: 500px">
+                            <ul class="uk-slideshow-items" uk-slideshow="autoplay: true" style="height: 500px">
+                                <li style="height: 500px">
+                                    <img src="images/carrusel/bg-golf-01.jpg" alt="" uk-cover class="imgNoticias" style="height: 500px">
+                                    <div class="uk-overlay uk-overlay-primary uk-position-right uk-text-center uk-transition-slide-right">
+                                        <h3 class="uk-margin-remove">nuevas canchas de tenis</h3>
+                                        <br>
+                                        <p class="uk-margin-remove" style="width: 400px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                    </div>
+                                </li>
+                                <li style="height: 500px">
+                                    <img src="images/carrusel/bg-golf-02.jpg" alt="" uk-cover class="imgNoticias" style="height: 500px">
+                                    <div class="uk-overlay uk-overlay-primary uk-position-right uk-text-center uk-transition-slide-right">
+                                        <h3 class="uk-margin-remove">cancha de paddle</h3>
+                                        <br>
+                                        <p class="uk-margin-remove" style="width: 400px;">
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo debitis obcaecati nulla praesentium corrupti quaerat, ex at blanditiis minus dolore hic, ullam sint sunt quod aperiam voluptas, harum ab animi!
+                                        </p>
+                                    </div>
+                                </li>
+                                <li style="height: 500px">
+                                    <img src="images/carrusel/bg-golf-03.jpg" alt="" uk-cover class="imgNoticias" style="height: 500px">
+                                    <div class="uk-overlay uk-overlay-primary uk-position-right uk-text-center uk-transition-slide-right">
+                                        <h3 class="uk-margin-remove">todos los tractores</h3>
+                                        <br>
+                                        <p class="uk-margin-remove" style="width: 400px;">
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Amet aspernatur fugiat inventore quaerat enim quasi voluptates distinctio molestiae temporibus sit excepturi deleniti qui, delectus et non. Sint accusamus natus ut! Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                                        </p>
+                                    </div>
+                                </li>
+                            </ul>
+                        
+                            <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slideshow-item="previous"></a>
+                            <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slideshow-item="next"></a>
+                        
+                        </div>
+
                     </article>
 
-                    <article class="section eventos" id="d">
-                        <h2>eventos</h2>
+                    <!-- ==== EL CUARTO ES LA SECCIÓN CLUB HOUSE === -->
+
+                    <article class="section clubHouse">
+ 
+                        <!-- ==== LADO IZQ. IMÁGENES E INFO DEL HOUSE === -->
+                        <div id="iiHouse">
+                            <div id="imgHouse">
+                                <!-- ==== SLIDER HOUSE === -->
+                                <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1" uk-slideshow="animation: scale" id="slideHouse">
+
+                                    <ul class="uk-slideshow-items">
+                                        <li>
+                                            <div class="uk-position-cover uk-animation-kenburns uk-animation-reverse uk-transform-origin-center-left">
+                                                <img src="images/house/house-01.jpg" alt="" uk-cover>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="uk-position-cover uk-animation-kenburns uk-animation-reverse uk-transform-origin-top-right">
+                                                <img src="images/house/house-01.jpg" alt="" uk-cover>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="uk-position-cover uk-animation-kenburns uk-animation-reverse uk-transform-origin-bottom-left">
+                                                <img src="images/house/house-01.jpg" alt="" uk-cover>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                
+                                    <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slideshow-item="previous"></a>
+                                    <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slideshow-item="next"></a>
+                                
+                                </div>
+
+
+
+
+                            </div>
+                            <div id="infoHouse">
+                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequuntur eveniet harum praesentium a quas quidem reprehenderit libero ipsa voluptas odio obcaecati, labore corporis in quibusdam! </p>
+                            </div>
+                        </div>
+                        <!-- ==== LADO DER. IMÁGENES E INFO DEL RESTÓ === -->
+                        <div id="restoHouse">
+                            <div id="restoContainer">
+                                <div id="tituloRestoHouse">
+                                    <h2>restó</h2>
+                                </div>
+                                <div id="itRestoHouse">
+                                    <div id="imgRestoHouse">
+                                        <img src="images/house/resto.jpg" alt="">
+                                    </div>
+                                    <div id="textoRestoHouse">
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet laboriosam magnam cum ipsa vero quas facere quia ducimus accusamus repellendus natus sequi. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti quisquam delectus, illo</p>
+                                    </div>
+                                </div>
+                                <div id="botonesRestoHouse">
+                                    <button id="verMenu"> ver menú </button>
+                                </div>
+                            </div>
+                        </div>
+
                     </article>
 
-                    <article class="section golf" id="e">
-                        <h2>club de golf</h2>
+                    <!-- ==== EL QUINTO ES LA SECCIÓN CLUB DE GOLF === -->
+
+                    <article class="section golf">
+                        <!-- ==== BOTÓN CON LINK PARA UN VIDEO === -->
+                        <p style="width: 300px;">
+                            <a class="btnVerVideo" href="#modal-media-youtube" uk-toggle> ver video</a>
+                            <button id="contactoGolf" uk-toggle="target: #offcanvas-slide"> contacto golf </button>
+                        </p>
+                        <div id="offcanvas-slide" uk-offcanvas="mode: slide; overlay: true">
+                            <div class="uk-offcanvas-bar">
+                                <button class="uk-offcanvas-close" type="button" uk-close></button>
+                                <div id="offcanvasGolf">
+                                    <h3>Title</h3>
+                                    <div id="nombre"></div>
+                                    <div id="email"></div>
+                                    <div id="telefono"></div>
+                                    <div id="areaTexto"></div>
+                                    <div id="botonEnviar"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="modal-media-youtube" class="uk-flex-top" uk-modal>
+                            <div class="uk-modal-dialog uk-width-auto uk-margin-auto-vertical">
+                                <button class="uk-modal-close-outside" type="button" uk-close></button>
+                                <iframe src="https://www.youtube-nocookie.com/embed/1QqGXCY3rW8" width="1920" height="1080" frameborder="0" uk-video uk-responsive></iframe>
+                            </div>
+                        </div>
+                        
+
+                        <!-- ==== DIV CON SECCIÓN GOLF === -->
+                        <div id="sectionGolf">
+                            <div id="asuntosGolf">
+                                <ul class="listGolf" uk-switcher="connect: .SWGolf">
+                                    <li><a href="#"><button class="btnAG btnAGG"> golf </button></a></li>
+                                    <li><a href="#"><button class="btnAG btnAGE"> escuelita </button></a></li>
+                                    <li><a href="#"><button class="btnAG btnAGT"> torneos </button></a></li>
+                                    <li><a href="#"><button class="btnAG btnAGN"> novedades </button></a></li>
+                                </ul>
+                            </div>
+                            <div id="ctnrImgGolf">
+                                <ul class="uk-switcher SWGolf">
+                                    <li><img src="images/golf/golf-01.jpg" alt=""></li>
+                                    <li><img src="images/golf/golf-02.jpg" alt=""></li>
+                                    <li><img src="images/golf/golf-03.jpg" alt=""></li>
+                                    <li><img src="images/golf/golf-04.jpg" alt=""></li>
+                                </ul>
+                            </div>
+                            <div id="ctnrTxtGolf">
+                                <ul class="uk-switcher SWGolf">
+                                    <li>
+                                        ITEM GOLF. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Debitis impedit exercitationem sed modi cum, quos repellat. Quaerat tempora asperiores iure nesciunt aperiam dolorem maxime, alias aliquid enim reiciendis provident nulla! Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit, laboriosam nesciunt impedit corporis similique officia distinctio in consequuntur neque ut et libero ipsa quae architecto! Eius maiores eaque possimus expedita!
+                                    </li>
+                                    <li>
+                                        ITEM ESCRUELITA. Hello again! The second item. Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis adipisci vitae, <a href="#">corporis</a>  cupiditate ratione, nostrum consequatur aperiam sint at dolores quod tempora atque repellendus doloribus voluptatum dolorem dolor illo possimus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis in dolorem magnam eos vero? Accusamus alias ea placeat dolorem pariatur itaque esse ut excepturi eveniet illum sunt nesciunt, odit atque?
+                                    </li>
+                                    <li>
+                                        ITEM TORNEOS. Bazinga! The third item. Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio iste rerum, mollitia neque temporibus esse sunt nulla dolorum sit sint veniam architecto aut non, qui doloribus ducimus voluptates fuga ipsum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam sed repudiandae veritatis iste nam facere sequi, quia nihil assumenda iusto odio vel accusamus nostrum omnis magnam. Officia velit rem voluptatem.
+                                    </li>
+                                    <li>
+                                        NOVEDADES. Bazinga! The third item. Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio iste rerum, mollitia neque temporibus esse sunt nulla dolorum sit sint veniam architecto aut non, qui doloribus ducimus voluptates fuga ipsum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam sed repudiandae veritatis iste nam facere sequi, quia nihil assumenda iusto odio vel accusamus nostrum omnis magnam. Officia velit rem voluptatem.
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+               
                     </article>
 
-                    <article class="section house" id="f">
-                        <h2>club house</h2>
+                    <!-- ==== EL SEXTO ES LA SECCIÓN EVENTOS === -->
+
+                    <article class="section eventos">
+                        <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1" uk-slideshow="animation: fade" style="height: 500px">
+                            <ul class="uk-slideshow-items" uk-slideshow="autoplay: true" style="height: 500px">
+                                <li style="height: 500px">
+                                    <img src="images/carrusel/bg-golf-01.jpg" alt="" uk-cover class="imgNoticias" style="height: 500px">
+                                    <div class="uk-overlay uk-overlay-primary uk-position-bottom uk-text-center uk-transition-slide-bottom">
+                                        <h3 class="uk-margin-remove">se viene el torneo de Golf de Fincas</h3>
+                                        <br>
+                                        <p class="uk-margin-remove">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                    </div>
+                                </li>
+                                <li style="height: 500px">
+                                    <img src="images/carrusel/bg-golf-02.jpg" alt="" uk-cover class="imgNoticias" style="height: 500px">
+                                    <div class="uk-overlay uk-overlay-primary uk-position-bottom uk-text-center uk-transition-slide-bottom">
+                                        <h3 class="uk-margin-remove">torneo de Golf de San Vicente</h3>
+                                        <br>
+                                        <p class="uk-margin-remove">
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo debitis obcaecati nulla praesentium corrupti quaerat, ex at blanditiis minus dolore hic, ullam sint sunt quod aperiam voluptas, harum ab animi!
+                                        </p>
+                                    </div>
+                                </li>
+                                <li style="height: 500px">
+                                    <img src="images/carrusel/bg-golf-03.jpg" alt="" uk-cover class="imgNoticias" style="height: 500px">
+                                    <div class="uk-overlay uk-overlay-primary uk-position-bottom uk-text-center uk-transition-slide-bottom">
+                                        <h3 class="uk-margin-remove">todos los sábados StarGolf</h3>
+                                        <br>
+                                        <p class="uk-margin-remove">
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Amet aspernatur fugiat inventore quaerat enim quasi voluptates distinctio molestiae temporibus sit excepturi deleniti qui, delectus et non. Sint accusamus natus ut! Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                                        </p>
+                                    </div>
+                                </li>
+                            </ul>
+                        
+                            <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slideshow-item="previous"></a>
+                            <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slideshow-item="next"></a>
+                        
+                        </div>
+
                     </article>
 
+                    <!-- ==== EL SEPTIMO ES LA SECCIÓN CONTACTO === -->
+
+                    <article class="section contacto">
+                        <div id="formularioContacto">
+                            <form action="/registrarse" method="POST" class="form-register">
+                                <div id="tituloFormulario">
+                                    <h4>contáctenos</h4>
+                                </div>
+                                <div class="input-container">
+                                    <input name="name" class="input" type="text" placeholder="nombre">
+                                </div>
+                                <div class="input-container">
+                                    <input name="email" class="input" type="text" placeholder="e-mail">
+                                </div>
+                                <div class="input-container">
+                                    <input name="tel" class="input" type="tel" placeholder="teléfono">
+                                </div>
+                                <div class="input-container">
+                                    <textarea name="comentario" id="coment" style="width: 100%; height: 150px;" placeholder="mensaje"></textarea>
+                                </div>
+                                <div id="btnsEraseSend">
+                                    <div class="buttonContainer">
+                                        <button id="btnErase" type="reset"> borrar datos </button>
+                                    </div>                              
+                                    <div class="buttonContainer">
+                                        <button id="btnSend" type="submit"> enviar </button>
+                                    </div>
+                                </div>            
+                            </form>
+                            </form>
+                        </div>
+                        <div id="iframeContacto">
+                            <div id="tituloIframe">
+                                <h4>donde estamos</h4>
+                            </div>
+                            <iframe id="iframe" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d6535.427344943358!2d-58.4687394!3d-35.013872!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bd2f2336a2acf9%3A0x481c9cd6b20635ce!2sFincas%20de%20San%20Vicente%20Golf!5e0!3m2!1ses!2sar!4v1619502562543!5m2!1ses!2sar" " allowfullscreen="" loading="lazy"></iframe>
+                        </div>
+                    </article>
                 </section>
             </main>
             <%- include ('../partials/footer') %>
-                <script src="/javascript/scrollTo.js"></script>
-                <!-- UIkit JS -->
-                <script src="https://cdn.jsdelivr.net/npm/uikit@3.6.20/dist/js/uikit.min.js"></script>
-                <script src="https://cdn.jsdelivr.net/npm/uikit@3.6.20/dist/js/uikit-icons.min.js"></script>
-                <!-- Option 2: Separate Popper and Bootstrap JS -->
-                <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"
-                    integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG"
-                    crossorigin="anonymous"></script>
-                <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js"
-                    integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc"
-                    crossorigin="anonymous"></script>
+
+            <!-- MIS SCRIPTS -->
+            <script src="/javascript/scrollTo.js"></script>
+            <script src="/javascript/clicks.js"></script>
+            <script src="/javascript/master.js"></script>
+            <!-- SWEERALERT 2 -->
+            <script src="//cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+            <!-- UIkit JS -->
+            <script src="https://cdn.jsdelivr.net/npm/uikit@3.6.20/dist/js/uikit.min.js"></script>
+            <script src="https://cdn.jsdelivr.net/npm/uikit@3.6.20/dist/js/uikit-icons.min.js"></script>
+            <!-- Option 2: Separate Popper and Bootstrap JS -->
+            <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"
+            integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG"
+            crossorigin="anonymous"></script>
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js"
+                integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc"
+                crossorigin="anonymous"></script>
     </body>
 
     </html>
