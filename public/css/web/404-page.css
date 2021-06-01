@@ -3,7 +3,6 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Comfortaa', cursive;
-    background-color: #e7e7de;
 }
 .main-header-space{
     height: 150px;
@@ -19,7 +18,7 @@
 h1{
     text-align: center;
     font-size: 3vw;
-    color: #00587a;
+    color: #05571F;
 }
 .space{
     display: flex;
@@ -30,11 +29,11 @@ h1{
     padding-top: 50px;
 }
 p{
-    color: #00587a;
+    color: #05571F;
 }
 a{
     text-decoration: none;
-    color: #00587a;
+    color: #05571F;
     font-weight: bolder;
     margin-left: 10px;
 }

@@ -74,7 +74,7 @@ html {
 	margin-right: 0.5em;
 }
 .buttonsNavBar {
-    width: 100px;
+    width: 120px;
     border: none;
     background-color: transparent;
     color: white;
@@ -292,6 +292,7 @@ html {
     border: none;
     border-radius: 5px;
     transition-duration: 1s;
+    text-decoration: none;
 }
 #verMenu:hover{
     background-color: #05571F;
@@ -456,7 +457,6 @@ html {
 /*======= SECCION CONTACTO =======*/
 .contacto{
     border-top: solid 2px #05571F;
-    border-bottom: solid 2px #05571F;
     width: 100%;
     display: flex;
     flex-wrap: wrap;

@@ -1,0 +1,50 @@
+PARA CREAR LA BASE DE DATOS LLAMADA fincasgolf_db
+
+CREATE TABLE `barrio` (
+   `id` INT NOT NULL AUTO_INCREMENT,
+   `textBarrio` TEXT NOT NULL,
+   PRIMARY KEY (`id`)
+);
+
+CREATE TABLE `users` (
+   `id` INT NOT NULL AUTO_INCREMENT,
+   `name` VARCHAR(255) NOT NULL,
+   `lastname` VARCHAR(255),
+   `email` VARCHAR(255) NOT NULL,
+   `telephoneNumber` INT NOT NULL,
+   `roll` INT NOT NULL,
+   `birthday` DATETIME,
+   `age` INT,
+   `homeAddress` VARCHAR(255),
+   PRIMARY KEY (`id`)
+);
+
+CREATE TABLE `noticias` (
+   `id` INT NOT NULL AUTO_INCREMENT,
+   `titleNoticias` VARCHAR(255) NOT NULL,
+   `textNoticias` TEXT NOT NULL,
+   PRIMARY KEY (`id`)
+);
+
+CREATE TABLE `house` (
+   `id` INT NOT NULL AUTO_INCREMENT,
+   `textHouse` TEXT NOT NULL,
+   `textResto` TEXT NOT NULL,
+   PRIMARY KEY (`id`)
+);
+
+CREATE TABLE `golf` (
+   `id` INT NOT NULL AUTO_INCREMENT,
+   `textGolf` TEXT NOT NULL,
+   `textEscuelita` TEXT NOT NULL,
+   `textTorneos` TEXT NOT NULL,
+   `textNovedades` TEXT NOT NULL,
+   PRIMARY KEY (`id`)
+);
+
+CREATE TABLE `eventos` (
+   `id` INT NOT NULL AUTO_INCREMENT,
+   `titleEvents` VARCHAR(255) NOT NULL,
+   `textEvents` TEXT NOT NULL,
+   PRIMARY KEY (`id`)
+);

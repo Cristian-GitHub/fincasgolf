@@ -4,5 +4,6 @@ const router = express.Router();
 //const authMiddleware = require ('../middlewares/authMiddleware');
 
 router.get ('/', webController.index);
+router.get ('/menu', webController.menu);
 
 module.exports = router;
